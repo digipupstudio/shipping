@@ -29,13 +29,10 @@ export default function Footer() {
           <div>
             <h4 className="text-[#FAFAFA] text-base font-medium mb-6">Links</h4>
             <ul className="space-y-4">
-              {["Home", "About", "Services", "Blog"].map((link) => (
-                <li key={link}>
-                  <a href="#" className="text-[#A3A3A3] text-base font-medium hover:text-white transition-colors">
-                    {link}
-                  </a>
-                </li>
-              ))}
+              <li><a href="/" className="text-[#A3A3A3] text-base font-medium hover:text-white transition-colors">Home</a></li>
+              <li><a href="/about" className="text-[#A3A3A3] text-base font-medium hover:text-white transition-colors">About</a></li>
+              <li><a href="/services" className="text-[#A3A3A3] text-base font-medium hover:text-white transition-colors">Services</a></li>
+              <li><a href="/blog" className="text-[#A3A3A3] text-base font-medium hover:text-white transition-colors">Blog</a></li>
             </ul>
           </div>
 

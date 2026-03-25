@@ -26,21 +26,10 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
-          {["Home", "Pages", "Services", "Blog"].map((item) => (
-            <a
-              key={item}
-              href="#"
-              className="text-[#FAFAFA] text-sm font-normal hover:text-brand transition-colors flex items-center gap-1"
-            >
-              {item}
-              <svg width="13" height="12" viewBox="0 0 13 12" fill="none">
-                <path
-                  d="M2.08789 4.14844L1.54883 4.6875L6.23633 9.375L6.50586 9.63281L6.77539 9.375L11.4629 4.6875L10.9238 4.14844L6.50586 8.56641L2.08789 4.14844Z"
-                  fill="#FAFAFA"
-                />
-              </svg>
-            </a>
-          ))}
+          <a href="/" className="text-[#FAFAFA] text-sm font-normal hover:text-brand transition-colors">Home</a>
+          <a href="/about" className="text-[#FAFAFA] text-sm font-normal hover:text-brand transition-colors">About</a>
+          <a href="/services" className="text-[#FAFAFA] text-sm font-normal hover:text-brand transition-colors">Services</a>
+          <a href="/blog" className="text-[#FAFAFA] text-sm font-normal hover:text-brand transition-colors">Blog</a>
         </nav>
 
         {/* CTA */}
@@ -85,16 +74,10 @@ export default function Navbar() {
       {/* Mobile menu */}
       {mobileOpen && (
         <div className="md:hidden bg-dark-bg border-t border-white/10 px-6 py-4 flex flex-col gap-4">
-          {["Home", "Pages", "Services", "Blog"].map((item) => (
-            <a
-              key={item}
-              href="#"
-              className="text-white text-base font-medium py-2 border-b border-white/10"
-              onClick={() => setMobileOpen(false)}
-            >
-              {item}
-            </a>
-          ))}
+          <a href="/" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>Home</a>
+          <a href="/about" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>About</a>
+          <a href="/services" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>Services</a>
+          <a href="/blog" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>Blog</a>
           <a
             href="#contact"
             className="brand-btn text-center mt-2"
