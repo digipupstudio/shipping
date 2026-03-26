@@ -96,26 +96,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Logos marquee strip */}
-      <LogosMarqueeStrip />
     </section>
-  );
-}
-
-function LogosMarqueeStrip() {
-  return (
-    <div
-      className="relative w-full overflow-hidden"
-      style={{
-        background:
-          "linear-gradient(90deg, rgba(0,0,0,0) 0%, #000 25%, #000 75%, rgba(0,0,0,0) 100%)",
-      }}
-    >
-      <img
-        src="https://api.builder.io/api/v1/image/assets/TEMP/b01954d53edd8b7c31666a6510cbd4d83b8d889b?width=2816"
-        alt="Trusted brands"
-        className="w-full h-[180px] sm:h-[209px] object-cover"
-      />
-    </div>
   );
 }
