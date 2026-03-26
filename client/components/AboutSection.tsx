@@ -18,7 +18,7 @@ export default function AboutSection() {
               className="font-medium text-2xl md:text-3xl lg:text-4xl text-[#0A0A0A]"
               style={{ letterSpacing: "-0.36px", lineHeight: "1.33" }}
             >
-              At ROYAUME SHiPPiNG LiNE iMPORT EXPORT LLC, we simplify international trade and customs clearance
+              At ROYAUME SHIPPING LINE IMPORT EXPORT LLC, we simplify international trade and customs clearance
             </h2>
             <p className="text-[#404040] text-base leading-relaxed">
               With extensive experience in import/export operations, we provide comprehensive shipping solutions that streamline your global supply chain – from vessel booking and documentation to customs clearance and final delivery. Based in Miami, we serve businesses seeking reliable, professional handling of their international shipments.

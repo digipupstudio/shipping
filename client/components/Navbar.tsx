@@ -18,9 +18,9 @@ export default function Navbar() {
         {/* Logo */}
         <a href="/" className="flex items-center">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/12e76f523a83ffb34cc4953d94a9f3219ed4cb24?width=234"
-            alt="ROYAUME SHiPPiNG LiNE iMPORT EXPORT LLC"
-            className="h-5 md:h-6 w-auto"
+            src="https://cdn.builder.io/api/v1/image/assets%2F860f967385ba439e95705da6918e19f0%2F03b4836ece6149fb9ec56e78d2a111bd?format=webp&width=800&height=1200"
+            alt="ROYAUME SHIPPING LINE IMPORT EXPORT LLC"
+            className="h-8 md:h-10 w-auto"
           />
         </a>
 

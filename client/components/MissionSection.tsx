@@ -11,7 +11,7 @@ export default function MissionSection() {
         <div className="mt-8 flex flex-col items-center gap-1">
           <div className="w-48 h-px" style={{ background: "linear-gradient(270deg, rgba(255,255,255,0) 3.98%, rgba(255,255,255,0.40) 49.67%, rgba(255,255,255,0) 95.35%)" }} />
           <p className="text-[#FAFAFA] text-lg font-medium mt-4">William Fils Coles</p>
-          <p className="text-[#A3A3A3] text-sm">Founder & CEO, ROYAUME SHiPPiNG LiNE iMPORT EXPORT LLC</p>
+          <p className="text-[#A3A3A3] text-sm">Founder & CEO, ROYAUME SHIPPING LINE IMPORT EXPORT LLC</p>
         </div>
       </div>
     </section>
