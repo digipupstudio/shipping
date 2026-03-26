@@ -1,3 +1,12 @@
+import ImageCarousel from "./ImageCarousel";
+
+const carouselImages = [
+  {
+    src: "https://cdn.builder.io/api/v1/image/assets%2F52d12691b26b4ff6a8c4b734164f0ba1%2F58c987b83a1d4a92b2c11fe2d3228158?format=webp&width=800&height=1200",
+    alt: "Shipping services showcase",
+  },
+];
+
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden bg-dark-bg">
@@ -15,7 +24,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-dark-bg/60 via-dark-bg/40 to-dark-bg/90" />
 
       {/* Content */}
-      <div className="relative flex-1 flex flex-col items-center justify-center text-center px-4 pt-24 pb-16 max-w-[1200px] mx-auto w-full">
+      <div className="relative flex-1 flex flex-col items-center justify-center text-center px-4 pt-24 pb-0 max-w-[1200px] mx-auto w-full">
         {/* Headline */}
         <h1
           className="font-medium leading-none tracking-tight text-5xl sm:text-6xl md:text-7xl lg:text-[80px] mb-8"
@@ -70,7 +79,7 @@ export default function HeroSection() {
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 items-center">
+        <div className="flex flex-col sm:flex-row gap-4 items-center mb-0">
           <a
             href="#contact"
             className="flex items-center gap-3 px-6 py-3 rounded-lg bg-brand text-white text-base font-medium hover:opacity-90 transition-opacity"
@@ -96,26 +105,10 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Logos marquee strip */}
-      <LogosMarqueeStrip />
+      {/* Image Carousel - Full Width */}
+      <div className="relative w-full px-4 py-0">
+        <ImageCarousel images={carouselImages} isMoving={true} />
+      </div>
     </section>
-  );
-}
-
-function LogosMarqueeStrip() {
-  return (
-    <div
-      className="relative w-full overflow-hidden"
-      style={{
-        background:
-          "linear-gradient(90deg, rgba(0,0,0,0) 0%, #000 25%, #000 75%, rgba(0,0,0,0) 100%)",
-      }}
-    >
-      <img
-        src="https://api.builder.io/api/v1/image/assets/TEMP/b01954d53edd8b7c31666a6510cbd4d83b8d889b?width=2816"
-        alt="Trusted brands"
-        className="w-full h-[180px] sm:h-[209px] object-cover"
-      />
-    </div>
   );
 }

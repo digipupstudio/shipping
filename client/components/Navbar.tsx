@@ -20,7 +20,7 @@ export default function Navbar() {
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F860f967385ba439e95705da6918e19f0%2F03b4836ece6149fb9ec56e78d2a111bd?format=webp&width=800&height=1200"
             alt="ROYAUME SHIPPING LINE IMPORT EXPORT LLC"
-            className="h-8 md:h-10 w-auto"
+            className="h-10 md:h-14 w-auto"
           />
         </a>
 
@@ -72,21 +72,27 @@ export default function Navbar() {
       </div>
 
       {/* Mobile menu */}
-      {mobileOpen && (
-        <div className="md:hidden bg-dark-bg border-t border-white/10 px-6 py-4 flex flex-col gap-4">
-          <a href="/" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>Home</a>
-          <a href="/about" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>About</a>
-          <a href="/services" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>Services</a>
-          <a href="/blog" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>Blog</a>
-          <a
-            href="#contact"
-            className="brand-btn text-center mt-2"
-            onClick={() => setMobileOpen(false)}
-          >
-            Get a Quote
-          </a>
-        </div>
-      )}
+      <div
+        className={`md:hidden border-t border-white/10 px-6 py-4 flex flex-col gap-4 transition-all duration-300 origin-top ${
+          mobileOpen ? "opacity-100 visible" : "opacity-0 invisible h-0 py-0"
+        }`}
+        style={{
+          background: "linear-gradient(180deg, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.75) 100%)",
+          backdropFilter: "blur(4px)",
+        }}
+      >
+        <a href="/" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>Home</a>
+        <a href="/about" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>About</a>
+        <a href="/services" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>Services</a>
+        <a href="/blog" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>Blog</a>
+        <a
+          href="#contact"
+          className="brand-btn justify-center w-full mt-2"
+          onClick={() => setMobileOpen(false)}
+        >
+          Get a Quote
+        </a>
+      </div>
     </header>
   );
 }
