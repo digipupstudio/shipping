@@ -72,21 +72,23 @@ export default function Navbar() {
       </div>
 
       {/* Mobile menu */}
-      {mobileOpen && (
-        <div className="md:hidden bg-dark-bg border-t border-white/10 px-6 py-4 flex flex-col gap-4">
-          <a href="/" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>Home</a>
-          <a href="/about" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>About</a>
-          <a href="/services" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>Services</a>
-          <a href="/blog" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>Blog</a>
-          <a
-            href="#contact"
-            className="brand-btn text-center mt-2"
-            onClick={() => setMobileOpen(false)}
-          >
-            Get a Quote
-          </a>
-        </div>
-      )}
+      <div
+        className={`md:hidden bg-dark-bg border-t border-white/10 px-6 py-4 flex flex-col gap-4 transition-all duration-300 origin-top ${
+          mobileOpen ? "opacity-100 visible" : "opacity-0 invisible h-0 py-0"
+        }`}
+      >
+        <a href="/" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>Home</a>
+        <a href="/about" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>About</a>
+        <a href="/services" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>Services</a>
+        <a href="/blog" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>Blog</a>
+        <a
+          href="#contact"
+          className="brand-btn justify-center w-full mt-2"
+          onClick={() => setMobileOpen(false)}
+        >
+          Get a Quote
+        </a>
+      </div>
     </header>
   );
 }
