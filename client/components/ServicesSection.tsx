@@ -1,13 +1,13 @@
 export default function ServicesSection() {
   return (
     <section id="services" className="bg-dark-bg py-20 md:py-28">
-      {/* Section Label */}
+      {/* Section Label 
       <div className="flex items-center justify-center gap-2 mb-6">
         <span className="w-2.5 h-2.5 rounded-sm bg-brand flex-shrink-0" />
         <span className="text-[#A3A3A3] text-base font-normal">Our Services</span>
-      </div>
+      </div>*/}
 
-      {/* Heading */}
+      {/* Heading 
       <div className="text-center mb-12 md:mb-16">
         <h2
           className="font-medium text-4xl md:text-5xl lg:text-[64px] leading-tight tracking-tight gradient-text"
@@ -17,7 +17,7 @@ export default function ServicesSection() {
           <br />
           Solutions for Global Trade
         </h2>
-      </div>
+      </div>*/}
 
       {/* Service Cards */}
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
