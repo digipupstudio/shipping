@@ -16,7 +16,7 @@ export default function Footer() {
             <a href="/" className="inline-block mb-6">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/5122edd474a0e535606834a87a4257d982d63b0e?width=612"
-                alt="Royaume Shipping Line"
+                alt="ROYAUME SHiPPiNG LiNE iMPORT EXPORT LLC"
                 className="h-10 w-auto"
               />
             </a>
@@ -82,7 +82,7 @@ export default function Footer() {
             <a href="#" className="text-[#A3A3A3] text-base hover:text-white transition-colors">Privacy Policies</a>
             <a href="#" className="text-[#A3A3A3] text-base hover:text-white transition-colors">Terms of use</a>
           </div>
-          <p className="text-[#A3A3A3] text-base">©2025 <a href="#" className="hover:text-white transition-colors">Royaume Shipping Line</a>. All rights reserved.</p>
+          <p className="text-[#A3A3A3] text-base">©2025 <a href="#" className="hover:text-white transition-colors">ROYAUME SHiPPiNG LiNE iMPORT EXPORT LLC</a>. All rights reserved.</p>
           <button
             onClick={scrollToTop}
             className="flex items-center gap-2 text-white text-base font-medium hover:opacity-70 transition-opacity"

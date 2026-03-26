@@ -69,9 +69,12 @@ export default function ContactSection() {
                 </span>
                 <div>
                   <p className="text-[#A3A3A3] text-base mb-1">Phone Number</p>
-                  <a href="tel:+17863292575" className="text-[#FAFAFA] text-base font-medium hover:text-brand transition-colors">
-                    (786) 329-2575
-                  </a>
+                  <div className="flex flex-col gap-2">
+                    <a href="tel:+13058507635" className="text-[#FAFAFA] text-base font-medium hover:text-brand transition-colors">
+                      (305) 850-7635
+                    </a>
+                    <p className="text-[#A3A3A3] text-sm">Virtual Receptionist • Ext. 1001: (786) 622-1682 • Ext. 1002: (786) 622-1683</p>
+                  </div>
                 </div>
               </div>
             </div>
