@@ -44,7 +44,7 @@ export default function ImageCarousel({
             className="carousel-track flex gap-6"
             style={{
               animation: "carousel-scroll 20s linear infinite",
-              width: `${images.length * 100}%`,
+              width: `${images.length * 300}%`,
             }}
           >
             {/* Original images */}
@@ -52,9 +52,9 @@ export default function ImageCarousel({
               <div
                 key={`original-${index}`}
                 className="flex-shrink-0"
-                style={{ width: `${100 / images.length}%` }}
+                style={{ width: `${100 / images.length / 3}%` }}
               >
-                <div className="w-full h-64 sm:h-80 md:h-96 overflow-hidden rounded-2xl">
+                <div className="w-full h-40 sm:h-52 md:h-64 overflow-hidden rounded-2xl">
                   <img
                     src={image.src}
                     alt={image.alt}
@@ -63,14 +63,30 @@ export default function ImageCarousel({
                 </div>
               </div>
             ))}
-            {/* Duplicate images for seamless loop */}
+            {/* First duplicate for seamless loop */}
             {images.map((image, index) => (
               <div
-                key={`duplicate-${index}`}
+                key={`duplicate-1-${index}`}
                 className="flex-shrink-0"
-                style={{ width: `${100 / images.length}%` }}
+                style={{ width: `${100 / images.length / 3}%` }}
               >
-                <div className="w-full h-64 sm:h-80 md:h-96 overflow-hidden rounded-2xl">
+                <div className="w-full h-40 sm:h-52 md:h-64 overflow-hidden rounded-2xl">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            ))}
+            {/* Second duplicate for extended loop */}
+            {images.map((image, index) => (
+              <div
+                key={`duplicate-2-${index}`}
+                className="flex-shrink-0"
+                style={{ width: `${100 / images.length / 3}%` }}
+              >
+                <div className="w-full h-40 sm:h-52 md:h-64 overflow-hidden rounded-2xl">
                   <img
                     src={image.src}
                     alt={image.alt}

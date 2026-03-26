@@ -103,11 +103,12 @@ export default function HeroSection() {
             Explore Services
           </a>
         </div>
-
-        {/* Image Carousel */}
-        <ImageCarousel images={carouselImages} isMoving={true} />
       </div>
 
+      {/* Image Carousel - Full Width */}
+      <div className="relative w-full px-4 pb-16">
+        <ImageCarousel images={carouselImages} isMoving={true} />
+      </div>
     </section>
   );
 }
