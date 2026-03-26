@@ -43,7 +43,7 @@ export default function ImageCarousel({
           <div
             className="carousel-track flex gap-6"
             style={{
-              animation: "carousel-scroll 40s linear infinite",
+              animation: "carousel-scroll 20s linear infinite",
               width: `${images.length * 100}%`,
             }}
           >
