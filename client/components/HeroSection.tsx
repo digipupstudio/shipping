@@ -24,7 +24,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-dark-bg/60 via-dark-bg/40 to-dark-bg/90" />
 
       {/* Content */}
-      <div className="relative flex-1 flex flex-col items-center justify-center text-center px-4 pt-24 pb-16 max-w-[1200px] mx-auto w-full">
+      <div className="relative flex-1 flex flex-col items-center justify-center text-center px-4 pt-24 pb-0 max-w-[1200px] mx-auto w-full">
         {/* Headline */}
         <h1
           className="font-medium leading-none tracking-tight text-5xl sm:text-6xl md:text-7xl lg:text-[80px] mb-8"
