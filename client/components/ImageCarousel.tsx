@@ -54,11 +54,11 @@ export default function ImageCarousel({
                 className="flex-shrink-0"
                 style={{ width: `${100 / images.length / 3}%` }}
               >
-                <div className="w-full h-40 sm:h-52 md:h-64 overflow-hidden rounded-2xl">
+                <div className="w-full h-40 sm:h-52 md:h-64 overflow-hidden rounded-2xl flex items-center justify-center">
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </div>
@@ -70,11 +70,11 @@ export default function ImageCarousel({
                 className="flex-shrink-0"
                 style={{ width: `${100 / images.length / 3}%` }}
               >
-                <div className="w-full h-40 sm:h-52 md:h-64 overflow-hidden rounded-2xl">
+                <div className="w-full h-40 sm:h-52 md:h-64 overflow-hidden rounded-2xl flex items-center justify-center">
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </div>
@@ -86,11 +86,11 @@ export default function ImageCarousel({
                 className="flex-shrink-0"
                 style={{ width: `${100 / images.length / 3}%` }}
               >
-                <div className="w-full h-40 sm:h-52 md:h-64 overflow-hidden rounded-2xl">
+                <div className="w-full h-40 sm:h-52 md:h-64 overflow-hidden rounded-2xl flex items-center justify-center">
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </div>
