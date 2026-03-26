@@ -20,7 +20,7 @@ export default function Navbar() {
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F860f967385ba439e95705da6918e19f0%2F03b4836ece6149fb9ec56e78d2a111bd?format=webp&width=800&height=1200"
             alt="ROYAUME SHIPPING LINE IMPORT EXPORT LLC"
-            className="h-8 md:h-10 w-auto"
+            className="h-10 md:h-14 w-auto"
           />
         </a>
 

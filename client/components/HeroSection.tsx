@@ -1,3 +1,12 @@
+import ImageCarousel from "./ImageCarousel";
+
+const carouselImages = [
+  {
+    src: "https://cdn.builder.io/api/v1/image/assets%2F52d12691b26b4ff6a8c4b734164f0ba1%2F58c987b83a1d4a92b2c11fe2d3228158?format=webp&width=800&height=1200",
+    alt: "Shipping services showcase",
+  },
+];
+
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden bg-dark-bg">
@@ -70,7 +79,7 @@ export default function HeroSection() {
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 items-center">
+        <div className="flex flex-col sm:flex-row gap-4 items-center mb-16">
           <a
             href="#contact"
             className="flex items-center gap-3 px-6 py-3 rounded-lg bg-brand text-white text-base font-medium hover:opacity-90 transition-opacity"
@@ -94,6 +103,9 @@ export default function HeroSection() {
             Explore Services
           </a>
         </div>
+
+        {/* Image Carousel */}
+        <ImageCarousel images={carouselImages} autoPlayInterval={5000} />
       </div>
 
     </section>
