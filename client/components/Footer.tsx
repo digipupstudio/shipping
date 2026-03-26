@@ -15,13 +15,13 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <a href="/" className="inline-block mb-6">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/5122edd474a0e535606834a87a4257d982d63b0e?width=612"
-                alt="Apexus"
-                className="h-10 w-auto"
+                src="https://cdn.builder.io/api/v1/image/assets%2F860f967385ba439e95705da6918e19f0%2F03b4836ece6149fb9ec56e78d2a111bd?format=webp&width=800&height=1200"
+                alt="ROYAUME SHIPPING LINE IMPORT EXPORT LLC"
+                className="h-14 w-auto"
               />
             </a>
             <p className="text-[#A3A3A3] text-base leading-relaxed">
-              Smart logistics solutions for growing brands. From warehousing to last-mile delivery.
+              Global shipping and import/export solutions for international trade. Your trusted partner for seamless customs clearance and logistics management.
             </p>
           </div>
 
@@ -29,13 +29,10 @@ export default function Footer() {
           <div>
             <h4 className="text-[#FAFAFA] text-base font-medium mb-6">Links</h4>
             <ul className="space-y-4">
-              {["Home", "About", "Services", "Blog"].map((link) => (
-                <li key={link}>
-                  <a href="#" className="text-[#A3A3A3] text-base font-medium hover:text-white transition-colors">
-                    {link}
-                  </a>
-                </li>
-              ))}
+              <li><a href="/" className="text-[#A3A3A3] text-base font-medium hover:text-white transition-colors">Home</a></li>
+              <li><a href="/about" className="text-[#A3A3A3] text-base font-medium hover:text-white transition-colors">About</a></li>
+              <li><a href="/services" className="text-[#A3A3A3] text-base font-medium hover:text-white transition-colors">Services</a></li>
+              <li><a href="/blog" className="text-[#A3A3A3] text-base font-medium hover:text-white transition-colors">Blog</a></li>
             </ul>
           </div>
 
@@ -85,7 +82,7 @@ export default function Footer() {
             <a href="#" className="text-[#A3A3A3] text-base hover:text-white transition-colors">Privacy Policies</a>
             <a href="#" className="text-[#A3A3A3] text-base hover:text-white transition-colors">Terms of use</a>
           </div>
-          <p className="text-[#A3A3A3] text-base">©2025 <a href="#" className="hover:text-white transition-colors">Apexus</a>. All rights reserved.</p>
+          <p className="text-[#A3A3A3] text-base">©2025 <a href="#" className="hover:text-white transition-colors">ROYAUME SHIPPING LINE IMPORT EXPORT LLC</a>. All rights reserved.</p>
           <button
             onClick={scrollToTop}
             className="flex items-center gap-2 text-white text-base font-medium hover:opacity-70 transition-opacity"
