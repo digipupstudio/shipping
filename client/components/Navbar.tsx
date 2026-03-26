@@ -73,9 +73,13 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`md:hidden bg-dark-bg border-t border-white/10 px-6 py-4 flex flex-col gap-4 transition-all duration-300 origin-top ${
+        className={`md:hidden border-t border-white/10 px-6 py-4 flex flex-col gap-4 transition-all duration-300 origin-top ${
           mobileOpen ? "opacity-100 visible" : "opacity-0 invisible h-0 py-0"
         }`}
+        style={{
+          background: "linear-gradient(180deg, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.75) 100%)",
+          backdropFilter: "blur(4px)",
+        }}
       >
         <a href="/" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>Home</a>
         <a href="/about" className="text-white text-base font-medium py-2 border-b border-white/10" onClick={() => setMobileOpen(false)}>About</a>
