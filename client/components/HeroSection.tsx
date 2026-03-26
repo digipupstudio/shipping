@@ -106,7 +106,7 @@ export default function HeroSection() {
       </div>
 
       {/* Image Carousel - Full Width */}
-      <div className="relative w-full px-4 pb-16">
+      <div className="relative w-full px-4 py-0">
         <ImageCarousel images={carouselImages} isMoving={true} />
       </div>
     </section>
