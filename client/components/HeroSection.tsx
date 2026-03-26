@@ -105,7 +105,7 @@ export default function HeroSection() {
         </div>
 
         {/* Image Carousel */}
-        <ImageCarousel images={carouselImages} autoPlayInterval={5000} />
+        <ImageCarousel images={carouselImages} isMoving={true} />
       </div>
 
     </section>

@@ -8,29 +8,85 @@ interface CarouselImage {
 interface ImageCarouselProps {
   images: CarouselImage[];
   autoPlayInterval?: number;
+  isMoving?: boolean;
 }
 
 export default function ImageCarousel({
   images,
   autoPlayInterval = 5000,
+  isMoving = false,
 }: ImageCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    if (images.length <= 1) return;
+    if (images.length <= 1 || isMoving) return;
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
     }, autoPlayInterval);
 
     return () => clearInterval(interval);
-  }, [images.length, autoPlayInterval]);
+  }, [images.length, autoPlayInterval, isMoving]);
 
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
   };
 
   if (images.length === 0) return null;
+
+  if (isMoving) {
+    return (
+      <div className="relative w-full">
+        {/* Moving carousel container */}
+        <div className="relative w-full overflow-hidden">
+          {/* Animated track */}
+          <div
+            className="carousel-track flex gap-6"
+            style={{
+              animation: "carousel-scroll 40s linear infinite",
+              width: `${images.length * 100}%`,
+            }}
+          >
+            {/* Original images */}
+            {images.map((image, index) => (
+              <div
+                key={`original-${index}`}
+                className="flex-shrink-0"
+                style={{ width: `${100 / images.length}%` }}
+              >
+                <div className="w-full h-64 sm:h-80 md:h-96 overflow-hidden rounded-2xl">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            ))}
+            {/* Duplicate images for seamless loop */}
+            {images.map((image, index) => (
+              <div
+                key={`duplicate-${index}`}
+                className="flex-shrink-0"
+                style={{ width: `${100 / images.length}%` }}
+              >
+                <div className="w-full h-64 sm:h-80 md:h-96 overflow-hidden rounded-2xl">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Gradient overlays */}
+          <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-black/30 via-transparent to-black/30 rounded-2xl" />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="relative w-full max-w-2xl mx-auto">
