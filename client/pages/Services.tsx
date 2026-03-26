@@ -20,6 +20,8 @@ export default function Services() {
       <Navbar />
       <main className="pt-16">
         <HeroCarouselSection
+          title="Our Services"
+          subtitle="Complete shipping solutions for global trade"
           carouselImages={servicesCarouselImages}
         />
         <ServicesSection />
